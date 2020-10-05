@@ -1,0 +1,42 @@
+
+<div class="maincontainer">
+<div class= "main">
+
+  <div class="container">
+    <div class="navbar">
+     <img src="../assets/logo-endless.svg" width="170" style="font-size: 30px;">
+     </div> 
+  </div>
+
+ 
+<div class= "imgback">
+      <div class="container">  <!-- container start -->
+          <div class="banner-text">
+            <h4>New games & Accessories</h4>
+            <h2>Monthly packages.</h2>
+            <h2>Excitement delivered daily.</h2>
+            <p>What's the best way to shop for the latest video games <br> and peripherals? How about never shopping at all? <br> You will get new stuff on your doorstep - every month.</p>
+            <button class="buttonClass">GET STARTED</button>
+        </div>  
+    </div> <!-- container end -->
+</div>
+
+
+
+<div>
+  <h3 style="text-align: center;">How it works</h3>
+<div class="container">
+  <div *ngFor= "let item of response">
+      <div class="middlesection">  
+      <div class="new-section">
+            <h1 class= "underlinestyle">0{{item.stepNumber}}</h1>
+            <h4>{{item.versionContent[0].title | uppercase}}</h4>
+            <p>{{item.versionContent[0].body}}</p>
+          </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>  
